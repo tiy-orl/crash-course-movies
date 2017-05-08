@@ -1,0 +1,128 @@
+:root {
+  --shield-gray: #3D485E;
+  --code-blue: #30C0CD;
+  --academy-purple: #243746;
+  --light-gray: #e9ebec;
+  --gray-1: #c9cdd1;
+  --gray-2: #929ba2;
+  --gray-3: #5c6974;
+  --headline: #202F37;
+  --body-text: #849096;
+  --subhead: #3C485E;
+  --nav-link: #323C4E;
+  --nav-link-text: #C1C9D8;
+}
+
+@font-face {
+  font-family: "Tisa Sans";
+  src: url("./fonts/Tisa Sans Pro/TisaSansPro-Thin.otf");
+}
+@font-face {
+  font-family: "Tisa Black";
+  src: url("./fonts/Tisa Pro/TisaOT-Black.otf");
+}
+@font-face {
+  font-family: "Tisa Pro";
+  src: url("./fonts/Tisa Pro/TisaPro.otf");
+}
+html {
+  color: var(--body-text);
+  background: var(--gray-3);
+}
+
+body {
+  background: #fff;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-family: "Tisa Sans";
+}
+
+header.page {
+  height: calc(3em + 50vh);
+  overflow: hidden;
+}
+
+nav {
+  background: var(--shield-gray);
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+}
+nav div, form {
+  display: flex;
+  align-items: center;
+}
+nav img {
+  height: 5em;
+  margin-right: 1em;
+}
+header img {
+  width: auto;
+  max-width: 100%;
+}
+
+main {
+  padding: 0 10%;
+  display: flex;
+}
+aside {
+  padding: 0 1%;
+  flex-basis: 30%;
+}
+aside img {
+  width: 100%;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+}
+section {
+  flex-basis: 70%;
+  margin-left: 5%;
+}
+section header {
+  margin-bottom: 2em;
+}
+h1, h2, h3 {
+  font-family: "Tisa Black";
+  color: var(--headline);
+}
+h1 {
+  font-size: 2em;
+  margin-top: 0.25em;
+  display: inline;
+}
+nav h1 {
+  font-family: "Tisa Pro";
+  font-size: 1.5em;
+  margin: 0;
+  color: var(--light-gray);
+}
+header span {
+  font-size: 1.25em;
+  margin-left: 0.5em;
+}
+.tagline {
+  font-variant: small-caps;
+  font-size: 1.25em;
+  margin: 0;
+  line-height: 1;
+} 
+dl {
+  border: 3px double var(--academy-purple);
+  padding: 0.5em;
+}
+dt {
+  float: left;
+  clear: left;
+  width: 200px;
+  text-align: right;
+  font-weight: bold;
+  color: var(--academy-purple);
+}
+dt::after {
+  content: ":";
+}
+dd {
+  margin: 0 0 0 210px;
+  padding: 0 0 0.5em 0;
+}
